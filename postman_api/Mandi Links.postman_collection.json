@@ -1,0 +1,2025 @@
+{
+	"info": {
+		"_postman_id": "38eec016-d0ee-44fa-b66c-0e5f5bdb868b",
+		"name": "Mandi Links",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29801289"
+	},
+	"item": [
+		{
+			"name": "API Auth & Acc Management",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone_no",
+									"value": "+923046699321\n",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "fLYXr28w9mvyExSipi0rxI:APA91bGtHq5Q28N2xLAKS3xPogotthnJ0G-E7AuryBRtQuuU8xspXcsLKHGIXUtU2hSc_vFrQkzk7SPDNgjW4hqCz0CrADknD1N2rrmmbmXAP8Jsa1X3-RDuG5m7GoPIOx8F9mDp2kfn",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Register OTP",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "John Doe",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "calebjanaltair@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone_no",
+									"value": "03302430696",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/send-register-otp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"send-register-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "John Doe",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "calebjanaltair@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone_no",
+									"value": "03394008600",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2V4cGxvcmVsb2dpY3NpdC5uZXQvbWFuZGlsaW5rcy9hcGkvbG9naW4iLCJpYXQiOjE3MDQ4MDA3ODgsImV4cCI6MTcxNjg5Njc4OCwibmJmIjoxNzA0ODAwNzg4LCJqdGkiOiJxdkhxQ3pPM2t3Mzc0ZmNyIiwic3ViIjoiOTciLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ChEtg_yuKA7TbR3AVE7fJTtKLmsbZBfK7I9ZsQYZ7S4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "John Doe",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone_no",
+									"value": "03302430696",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "4170 Barkat Market",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "152",
+									"type": "text"
+								},
+								{
+									"key": "zip",
+									"value": "54000",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/E:/Downloads/prof.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/update-profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"update-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Phone Change OTP",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzA0Njk5ODc2LCJleHAiOjE3MDQ3MDM0NzYsIm5iZiI6MTcwNDY5OTg3NiwianRpIjoibndvUUVtMnhKTVloSnl1ZSIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xeT_nf5M3hD1_c5e9WWytWB5i6WdFSIBGRFi3Nk2juc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone_no",
+									"value": "03302430697",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "calebjanaltair@gmail.com",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/send-update-phone-otp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"send-update-phone-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Password Authenticated",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzAzODQzMzU1LCJleHAiOjE3MDM4NDY5NTUsIm5iZiI6MTcwMzg0MzM1NSwianRpIjoiM1EzRTlhdDhQd05HYW5CWiIsInN1YiI6Ijk1IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.KeOU9ylCPKK-gzHVHrREtOjSUIJteNEMN729s6vJI10",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "old_password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/update-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"update-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Me/Profile",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzA0NzkxNDEyLCJleHAiOjE3MTY4ODc0MTIsIm5iZiI6MTcwNDc5MTQxMiwianRpIjoia2J1d2EwY0s1WUhmTHpINiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Tt6XBZtAje-s3Y3S1EBkxL8ohc1aF6ikvGpOF_lPTRg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzAzODQ0NDMxLCJleHAiOjE3MDM4NDgwMzEsIm5iZiI6MTcwMzg0NDQzMSwianRpIjoiNEZiU1NTNFdOQkVKa0ZhYSIsInN1YiI6Ijk1IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.bbUa2SSp_E7JnzACUQc9yUCXMY-QntYPKCUxl7ICI5Y",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Contact Us",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzA0Njk5ODc2LCJleHAiOjE3MDQ3MDM0NzYsIm5iZiI6MTcwNDY5OTg3NiwianRpIjoibndvUUVtMnhKTVloSnl1ZSIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xeT_nf5M3hD1_c5e9WWytWB5i6WdFSIBGRFi3Nk2juc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "John Doe",
+									"type": "text"
+								},
+								{
+									"key": "phone_no",
+									"value": "03302430695",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "Hello World!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/contact",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete/Inactivate User account",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzAzODQ3MzYyLCJleHAiOjE3MDM4NTA5NjIsIm5iZiI6MTcwMzg0NzM2MiwianRpIjoiVTdLSkVDamlFMHBlTzVrMyIsInN1YiI6Ijk1IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.38JTHgfAnckUSlC3ejuqrirDopxsmDkUmUNpTNNNF-4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/delete-account",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"delete-account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL3JlZnJlc2giLCJpYXQiOjE3MDM4NDQ0MzEsImV4cCI6MTcwMzg0ODA4NCwibmJmIjoxNzAzODQ0NDg0LCJqdGkiOiJvY0ZHd1ZtVG9NTllzYU43Iiwic3ViIjoiOTUiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.VvodW7gzpfYhGYH8pq-iobdiAvb1vj3uYOeX8bKa0RM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone_no",
+									"value": "03394008600",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "calebjanaltair@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/forgot-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "otp",
+									"value": "1273",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "confirm-password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/reset-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories & Subcategories",
+			"item": [
+				{
+					"name": "All Categories",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzAzNzY4NjUyLCJleHAiOjE3MDM3NzIyNTIsIm5iZiI6MTcwMzc2ODY1MiwianRpIjoicWJDVkIwc2lydGxEaVJSUiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.0kJ_h_xGTit6THlqSlGI2ihzOc7ST6ua4YZtgfUv_xg",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/category/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"category",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Category",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzAzNzY4NjUyLCJleHAiOjE3MDM3NzIyNTIsIm5iZiI6MTcwMzc2ODY1MiwianRpIjoicWJDVkIwc2lydGxEaVJSUiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.0kJ_h_xGTit6THlqSlGI2ihzOc7ST6ua4YZtgfUv_xg",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/category/show/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"category",
+								"show",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subcategories of Category",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzAzNzY4NjUyLCJleHAiOjE3MDM3NzIyNTIsIm5iZiI6MTcwMzc2ODY1MiwianRpIjoicWJDVkIwc2lydGxEaVJSUiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.0kJ_h_xGTit6THlqSlGI2ihzOc7ST6ua4YZtgfUv_xg",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/category/specific-subcategories/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"category",
+								"specific-subcategories",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product Posts",
+			"item": [
+				{
+					"name": "All Latest Posts",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzA0MTEzMTc1LCJleHAiOjE3MDQxMTY3NzUsIm5iZiI6MTcwNDExMzE3NSwianRpIjoiZkZ2MlN4d3hCNFBKbE1mNyIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.u-OUcWB0cFVbL06dnaE76vg34pL_X5iV80n5li-HXmw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/product-post/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"product-post",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Post",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzAzODUxNDYyLCJleHAiOjE3MDM4NTUwNjIsIm5iZiI6MTcwMzg1MTQ2MiwianRpIjoiRGM5YVJlNzdXUnVtUFdqRiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.QujYYb0I-7yh0sTfhGug0Om0WkGSFBLPNm45vrhNMTQ",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/product-post/show/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"product-post",
+								"show",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Latest Subcategory Posts",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzAzODUxNDYyLCJleHAiOjE3MDM4NTUwNjIsIm5iZiI6MTcwMzg1MTQ2MiwianRpIjoiRGM5YVJlNzdXUnVtUFdqRiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.QujYYb0I-7yh0sTfhGug0Om0WkGSFBLPNm45vrhNMTQ",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/product-post/show-subcategory-posts/48",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"product-post",
+								"show-subcategory-posts",
+								"48"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Latest city Posts",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzAzODUxNDYyLCJleHAiOjE3MDM4NTUwNjIsIm5iZiI6MTcwMzg1MTQ2MiwianRpIjoiRGM5YVJlNzdXUnVtUFdqRiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.QujYYb0I-7yh0sTfhGug0Om0WkGSFBLPNm45vrhNMTQ",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/product-post/show-city-posts/178",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"product-post",
+								"show-city-posts",
+								"178"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store/ Add Post",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzA0MDk1MzIzLCJleHAiOjE3MDQwOTg5MjMsIm5iZiI6MTcwNDA5NTMyMywianRpIjoiN1lnaHpRMGdPY3B4V2pTRSIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.eXfdcvpIm-YSte6AOSYS1ImGRjBEWyiogss1mnJ_Ctk",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "100 %  Pure Desi Ghee from Buffalo Milk & Butter",
+									"type": "text"
+								},
+								{
+									"key": "images[]",
+									"type": "file",
+									"src": [
+										"/C:/Users/Muhammad Arslan/Downloads/ghe3.png",
+										"/C:/Users/Muhammad Arslan/Downloads/ghe2.png",
+										"/C:/Users/Muhammad Arslan/Downloads/ghe.png"
+									]
+								},
+								{
+									"key": "product_location",
+									"value": "178",
+									"type": "text"
+								},
+								{
+									"key": "unit_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2500",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "02",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "subcategory_id",
+									"value": "48",
+									"type": "text"
+								},
+								{
+									"key": "moisture",
+									"value": "99",
+									"type": "text"
+								},
+								{
+									"key": "place_of_origin",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "brand",
+									"value": "ASG Dairy Farm",
+									"type": "text"
+								},
+								{
+									"key": "model_no",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "certification",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "100 %  Pure Desi Ghee from Buffalo Milk",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/product-post/store",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"product-post",
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Post",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2V4cGxvcmVsb2dpY3NpdC5uZXQvbWFuZGlsaW5rcy9hcGkvbG9naW4iLCJpYXQiOjE3MDQ4MDEwNTMsImV4cCI6MTcxNjg5NzA1MywibmJmIjoxNzA0ODAxMDUzLCJqdGkiOiJKWHhJWDViNDUxVnMzZG8yIiwic3ViIjoiOTciLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.mCYlwiHws7UcLkFLNZkD0wLEaZ3Y0SzuHrBZL6KPyi4",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "31",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/product-post/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"product-post",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product Requests",
+			"item": [
+				{
+					"name": "All Latest Requests",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzAzODUxNDYyLCJleHAiOjE3MDM4NTUwNjIsIm5iZiI6MTcwMzg1MTQ2MiwianRpIjoiRGM5YVJlNzdXUnVtUFdqRiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.QujYYb0I-7yh0sTfhGug0Om0WkGSFBLPNm45vrhNMTQ",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/product-request/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"product-request",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Prod Request",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzAzODUxNDYyLCJleHAiOjE3MDM4NTUwNjIsIm5iZiI6MTcwMzg1MTQ2MiwianRpIjoiRGM5YVJlNzdXUnVtUFdqRiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.QujYYb0I-7yh0sTfhGug0Om0WkGSFBLPNm45vrhNMTQ",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/product-request/show/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"product-request",
+								"show",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Latest Subcategory Posts",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzAzODUxNDYyLCJleHAiOjE3MDM4NTUwNjIsIm5iZiI6MTcwMzg1MTQ2MiwianRpIjoiRGM5YVJlNzdXUnVtUFdqRiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.QujYYb0I-7yh0sTfhGug0Om0WkGSFBLPNm45vrhNMTQ",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/product-request/show-subcategory-requests/48",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"product-request",
+								"show-subcategory-requests",
+								"48"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Latest city Requests",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzAzODUxNDYyLCJleHAiOjE3MDM4NTUwNjIsIm5iZiI6MTcwMzg1MTQ2MiwianRpIjoiRGM5YVJlNzdXUnVtUFdqRiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.QujYYb0I-7yh0sTfhGug0Om0WkGSFBLPNm45vrhNMTQ",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/product-request/show-city-requests/178",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"product-request",
+								"show-city-requests",
+								"178"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store/ Add Request",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzA0MTAzNDc2LCJleHAiOjE3MDQxMDcwNzYsIm5iZiI6MTcwNDEwMzQ3NiwianRpIjoidmdkTUtIcVJ6SHhud3RpSSIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.wj80i3jqp6KjpNfGMXMWI98RaiAst3Ed0tu42SBl5f4",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Oil",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Muhammad Arslan/Downloads/download (15).jfif"
+								},
+								{
+									"key": "product_location",
+									"value": "178",
+									"type": "text"
+								},
+								{
+									"key": "unit_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "02",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "subcategory_id",
+									"value": "48",
+									"type": "text"
+								},
+								{
+									"key": "moisture",
+									"value": "99",
+									"type": "text"
+								},
+								{
+									"key": "place_of_origin",
+									"value": "Jammu Stop",
+									"type": "text"
+								},
+								{
+									"key": "brand",
+									"value": "ASG Farm",
+									"type": "text"
+								},
+								{
+									"key": "model_no",
+									"value": "37597",
+									"type": "text"
+								},
+								{
+									"key": "certification",
+									"value": "PFA",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Palm Oil Used",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/product-request/store",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"product-request",
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Request",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzAzODUxNDYyLCJleHAiOjE3MDM4NTUwNjIsIm5iZiI6MTcwMzg1MTQ2MiwianRpIjoiRGM5YVJlNzdXUnVtUFdqRiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.QujYYb0I-7yh0sTfhGug0Om0WkGSFBLPNm45vrhNMTQ",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/product-request/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"product-request",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Manage User Posts + Requests",
+			"item": [
+				{
+					"name": "Auth User Active Posts",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2V4cGxvcmVsb2dpY3NpdC5uZXQvbWFuZGlsaW5rcy9hcGkvbG9naW4iLCJpYXQiOjE3MDQ4MDEwNTMsImV4cCI6MTcxNjg5NzA1MywibmJmIjoxNzA0ODAxMDUzLCJqdGkiOiJKWHhJWDViNDUxVnMzZG8yIiwic3ViIjoiOTciLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.mCYlwiHws7UcLkFLNZkD0wLEaZ3Y0SzuHrBZL6KPyi4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/manage-post/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"manage-post",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Auth User Active Requests",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzAzODUwMjg4LCJleHAiOjE3MDM4NTM4ODgsIm5iZiI6MTcwMzg1MDI4OCwianRpIjoiV3BGSlRvM3lUYUlBbEs2dSIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.jZ3y_9EGJVqOaqIpKGZKUIRLDEdl7eNq5IKf_hrDqlE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/manage-post/requests",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"manage-post",
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Posts + Requests Auth User Active All",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzA0NzkxNDEyLCJleHAiOjE3MTY4ODc0MTIsIm5iZiI6MTcwNDc5MTQxMiwianRpIjoia2J1d2EwY0s1WUhmTHpINiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Tt6XBZtAje-s3Y3S1EBkxL8ohc1aF6ikvGpOF_lPTRg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/manage-post/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"manage-post",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Favourites",
+			"item": [
+				{
+					"name": "Like/Unlike Product Post",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzA0MTEzMTc1LCJleHAiOjE3MDQxMTY3NzUsIm5iZiI6MTcwNDExMzE3NSwianRpIjoiZkZ2MlN4d3hCNFBKbE1mNyIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.u-OUcWB0cFVbL06dnaE76vg34pL_X5iV80n5li-HXmw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/favourite/favUnFave-product-post/16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"favourite",
+								"favUnFave-product-post",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Like/Unlike Product Request",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzAzODQ4ODgzLCJleHAiOjE3MDM4NTI0ODMsIm5iZiI6MTcwMzg0ODg4MywianRpIjoiZDdMZEJiUmVyaWRCYzVNOSIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.4birPiJfwPTXKO45rhPPz9Se-GiHgESGLkP4Lcidmxc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/favourite/favUnFave-product-request/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"favourite",
+								"favUnFave-product-request",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Favourites / Likes",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzA0NzkxNDEyLCJleHAiOjE3MTY4ODc0MTIsIm5iZiI6MTcwNDc5MTQxMiwianRpIjoia2J1d2EwY0s1WUhmTHpINiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Tt6XBZtAje-s3Y3S1EBkxL8ohc1aF6ikvGpOF_lPTRg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/favourite/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"favourite",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blogs",
+			"item": [
+				{
+					"name": "All Blogs",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2V4cGxvcmVsb2dpY3NpdC5uZXQvbWFuZGlsaW5rcy9hcGkvbG9naW4iLCJpYXQiOjE3MDQ3ODcxOTksImV4cCI6MTcxNjg4MzE5OSwibmJmIjoxNzA0Nzg3MTk5LCJqdGkiOiJ2VWxKODJRY0VNTWYxR0FIIiwic3ViIjoiOTIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.HQ8PODLEsQcE4uoX2nXoEdaC1OeVQngTs4hBFJCJ42I",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/blogs/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"blogs",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blog Details",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2V4cGxvcmVsb2dpY3NpdC5uZXQvbWFuZGlsaW5rcy9hcGkvbG9naW4iLCJpYXQiOjE3MDQ3OTYyNTYsImV4cCI6MTcxNjg5MjI1NiwibmJmIjoxNzA0Nzk2MjU2LCJqdGkiOiJqWDZuNjVSM3FVaW40MEFqIiwic3ViIjoiOTIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.IdobwlLfRjOkVBXqFVFXkc9dZu8JA06nauDXroV-_0Y",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/blogs/details/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"blogs",
+								"details",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Details (profile + posts + requests)",
+			"item": [
+				{
+					"name": "Get User",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2V4cGxvcmVsb2dpY3NpdC5uZXQvbWFuZGlsaW5rcy9hcGkvbG9naW4iLCJpYXQiOjE3MDQ4MDA1NjUsImV4cCI6MTcxNjg5NjU2NSwibmJmIjoxNzA0ODAwNTY1LCJqdGkiOiJrTmZOMEt6U0JGNG5QQkE2Iiwic3ViIjoiOTIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.EKHiaw1x-hr5JRcu9L6YJlD-T7GkRNSZQx6txzUmIos",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/user-details/92",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"user-details",
+								"92"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Common Requests",
+			"item": [
+				{
+					"name": "GET Cities",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var template = `\r",
+									"<style type=\"text/css\">\r",
+									"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}\r",
+									"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}\r",
+									"    .tftable tr {background-color:#ffffff;}\r",
+									"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}\r",
+									"    .tftable tr:hover {background-color:#e0ffff;}\r",
+									"</style>\r",
+									"\r",
+									"<table class=\"tftable\" border=\"1\">\r",
+									"    <tr>\r",
+									"        <th>ID</th>\r",
+									"        <th>Value</th>\r",
+									"        <th>City</th>\r",
+									"        <th>Created At</th>\r",
+									"        <th>Updated At</th>\r",
+									"    </tr>\r",
+									"    \r",
+									"    {{#each response}}\r",
+									"        <tr>\r",
+									"            <td>{{id}}</td>\r",
+									"            <td>{{value}}</td>\r",
+									"            <td>{{city}}</td>\r",
+									"            <td>{{created_at}}</td>\r",
+									"            <td>{{updated_at}}</td>\r",
+									"        </tr>\r",
+									"    {{/each}}\r",
+									"</table>\r",
+									"`;\r",
+									"\r",
+									"function constructVisualizerPayload() {\r",
+									"    return { response: pm.response.json() }\r",
+									"}\r",
+									"\r",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/get-cities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"get-cities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Units",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/get-units",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"get-units"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Chat",
+			"item": [
+				{
+					"name": "Total Unread Chat Threads",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzA0Mjg5OTIyLCJleHAiOjE3MDQyOTM1MjIsIm5iZiI6MTcwNDI4OTkyMiwianRpIjoiWm40TkUzRXNLdXFseWNNcCIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.XZEldQ3fnoVEcv2Tp7i7jCw3tkAtZTIna3SXf5YB-fI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/chat/count-unread-chat-threads",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"chat",
+								"count-unread-chat-threads"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Chat Threads With Unread Msg Counts",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzA0MjgwMTA5LCJleHAiOjE3MDQyODM3MDksIm5iZiI6MTcwNDI4MDEwOSwianRpIjoiU3kyYTVyWndmWlQ0b3NaYiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.4BeHC9uh7RHbzG66MLq9C33dDzXiUdngV6hukAoJSQ0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/chat/all-chat-threads",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"chat",
+								"all-chat-threads"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Msgs in a Chat Thread",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzA0MjgwMTA5LCJleHAiOjE3MDQyODM3MDksIm5iZiI6MTcwNDI4MDEwOSwianRpIjoiU3kyYTVyWndmWlQ0b3NaYiIsInN1YiI6IjkyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.4BeHC9uh7RHbzG66MLq9C33dDzXiUdngV6hukAoJSQ0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mandilinks/api/chat/all-chat-message/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"chat",
+								"all-chat-message",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Message",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L21hbmRpbGlua3MvYXBpL2xvZ2luIiwiaWF0IjoxNzA0MjkwMDM3LCJleHAiOjE3MDQyOTM2MzcsIm5iZiI6MTcwNDI5MDAzNywianRpIjoiUmtJaFZRY2ZMWXk0WHRQdSIsInN1YiI6Ijk2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.1L-pazfhPVoBejCiy3rZcehClaY0ymMMqrN8sEmT6V0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "receiver_id",
+									"value": "92",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "Reply  Msg",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Muhammad Arslan/Downloads/download (13).jfif",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/mandilinks/api/chat/send-message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mandilinks",
+								"api",
+								"chat",
+								"send-message"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
